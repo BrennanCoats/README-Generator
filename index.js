@@ -4,34 +4,8 @@ const generateMarkdown = require("./utils/generateMarkdown")
 
 const { writeFile } = require('fs').promises;
  
-// TODO: Create an array of questions for user input
 const promptUser = () => {
     return inquirer.prompt([
-    // {
-    //     type: "input",
-    //     name: "title",
-    //     message: "Please name your Project.",
-    // },
-    // {
-    //     type: "input",
-    //     name: "description",
-    //     message: "Please describe the purpose and functionality of this project.",
-    // },
-    // {
-    //     type: "input",
-    //     name: "link",
-    //     message: "Please provide a URL where a user can access your deployed application."
-    // },
-    // {
-    //     type: 'input',
-    //     name: 'linkedin',
-    //     message: 'Enter your LinkedIn URL',
-    // },
-    // {
-    //     type: 'input',
-    //     name: 'Github',
-    //     message: 'Enter your Github URL',
-    // },
     {
         type: "checkbox",
         name: "license",
@@ -77,21 +51,13 @@ const promptUser = () => {
     ]);
 };
 
-// TODO: Create a function to write README file
-
-
-// writeToFile()
-// TODO: Create a function to initialize app
 
 const init = () => {
     promptUser()
-      // Use writeFile method imported from fs.promises to use promises instead of
-      // a callback function
+      
       .then((answers) => writeFile('./dist/README.md', generateMarkdown(answers)))
       .then(() => console.log('Successfully created README file'))
       .catch((err) => console.error(err));
   };
-
-// Function call to initialize app
 
 init();

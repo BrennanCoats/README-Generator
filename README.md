@@ -1,10 +1,10 @@
-# undefined 
+# Professional README Generator
 ![Github license](https://img.shields.io/badge/license--blue.svg)
 ## Description
-
+This is an application that prompts the user for information related to their project and then generates a professional README file based on the users responses.
 undefined
 ## Deployed Application URL
-undefined
+n/a
 ## Table of Contents
 * [Languages & Dependencies](#languagesanddependencies)
 * [How to Use This Application](#HowtoUseThisApplication)
@@ -14,7 +14,7 @@ undefined
 ## Features
 Inquirer
 ## Dependencies used in this application:
-This application was built with javascript and inquirer
+This project was built with Javascript and Inquirer.
 ## Contributors
 n/a
 ## Testing
