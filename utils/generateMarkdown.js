@@ -14,15 +14,18 @@ ${data.description}
 ## Deployed Application URL
 ${data.link}
 ## Table of Contents
+* [Installation Instructions](#installationinstructions)
 * [Languages & Dependencies](#languagesanddependencies)
-* [How to Use This Application](#HowtoUseThisApplication)
+* [Contribution Guidelines](#contributionguidelines)
 * [Contributors](#contributors)
 * [Testing](#testing)
 * [Questions](#questions)
-## Features
-${data.require}
-## Dependencies used in this application:
+## Installation Instructions
+${data.instructions}
+## Languages & Dependencies
 ${data.usage}
+## Contribution Guidelines
+${data.guidelines}
 ## Contributors
 ${data.contributors}
 ## Testing
